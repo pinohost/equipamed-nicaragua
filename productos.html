@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos — Equipamed S.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<style>
+  #ultrasonidos{background:var(--blanco);}
+  .us-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media (max-width:900px){ .us-grid{grid-template-columns:1fr;} }
+  .us-card{border:1px solid var(--linea); background:var(--blanco); box-shadow:var(--sombra); display:flex; flex-direction:column;}
+  .us-card .us-head{background:var(--azul-900); color:var(--blanco); padding:16px 20px;}
+  .us-card .us-head .tag{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--azul-300);}
+  .us-card .us-head h3{color:var(--blanco); font-size:19px; margin-top:4px;}
+  .us-card .us-body{padding:20px; display:flex; flex-direction:column; gap:14px; flex:1;}
+  .us-card .precio{font-family:'JetBrains Mono',monospace; font-size:26px; font-weight:700; color:var(--azul-700);}
+  .us-card ul{list-style:none; display:flex; flex-direction:column; gap:8px;}
+  .us-card li{font-size:13.5px; color:#3A4A5A; padding-left:16px; position:relative;}
+  .us-card li::before{content:'✓'; position:absolute; left:0; color:var(--acento); font-weight:700;}
+  .us-card .envio{font-size:12px; color:var(--acento); font-weight:600; margin-top:auto;}
+
+  #catalogo{background:var(--fondo); border-top:1px solid var(--linea);}
+  .catalogo-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--linea); border:1px solid var(--linea);}
+  @media (max-width:760px){ .catalogo-grid{grid-template-columns:1fr;} }
+  .catalogo-item{background:var(--blanco); padding:26px; display:flex; gap:16px; align-items:flex-start;}
+  .catalogo-item .icono{width:38px; height:38px; background:var(--azul-100); border-radius:var(--radio); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--azul-700);}
+  .catalogo-item h3{font-size:16.5px; margin-bottom:4px;}
+  .catalogo-item p{font-size:13.5px; color:#3A4A5A;}
+
+  .nota-precios{background:var(--azul-100); border:1px solid var(--linea); padding:18px 22px; font-size:13.5px; color:var(--azul-900); margin-top:32px;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo-equipamed-header.png" alt="Equipamed S.A." style="height:32px; width:auto;">
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0A3D62" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <div class="nav-links nav-mobile-hide">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html" class="activo">Productos</a>
+      <a href="proceso.html">Proceso</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <a class="nav-cta" href="https://wa.me/50588819947" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap reveal">
+    <span class="eyebrow">Productos</span>
+    <h1>Equipos médicos disponibles</h1>
+    <p>Ultrasonidos, electrocardiógrafos, soporte respiratorio y más. Todos con envío a toda Nicaragua.</p>
+  </div>
+</section>
+
+<section id="ultrasonidos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Destacados</span>
+      <h2>Ultrasonidos disponibles</h2>
+      <p>Tres modelos según lo que necesite tu consultorio o clínica.</p>
+    </div>
+    <div class="us-grid reveal">
+      <div class="us-card">
+        <div class="us-head">
+          <div class="tag">Doppler color</div>
+          <h3>Ultrasonido 15"</h3>
+        </div>
+        <div class="us-body">
+          <div class="precio">$11,000</div>
+          <ul>
+            <li>Sonda convexa</li>
+            <li>Sonda lineal</li>
+            <li>Sonda transvaginal</li>
+            <li>Impresora</li>
+            <li>Carro de transporte</li>
+            <li>Batería</li>
+          </ul>
+          <div class="envio">Envío a toda Nicaragua</div>
+        </div>
+      </div>
+      <div class="us-card">
+        <div class="us-head">
+          <div class="tag">Doppler color</div>
+          <h3>Ultrasonido 12"</h3>
+        </div>
+        <div class="us-body">
+          <div class="precio">$6,000</div>
+          <ul>
+            <li>Sonda convexa</li>
+            <li>Impresora</li>
+          </ul>
+          <div class="envio">Envío a toda Nicaragua</div>
+        </div>
+      </div>
+      <div class="us-card">
+        <div class="us-head">
+          <div class="tag">Blanco y negro</div>
+          <h3>Ultrasonido 10"</h3>
+        </div>
+        <div class="us-body">
+          <div class="precio">$4,000</div>
+          <ul>
+            <li>Sonda convexa</li>
+            <li>Impresora</li>
+          </ul>
+          <div class="envio">Envío a toda Nicaragua</div>
+        </div>
+      </div>
+    </div>
+    <div class="nota-precios reveal">
+      Precios en dólares (USD), sujetos a cambio según disponibilidad. Escríbenos por WhatsApp para confirmar el precio actual y disponibilidad antes de tu compra.
+    </div>
+  </div>
+</section>
+
+<section id="catalogo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Catálogo general</span>
+      <h2>También manejamos</h2>
+    </div>
+    <div class="catalogo-grid reveal">
+      <div class="catalogo-item">
+        <div class="icono">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h3>Electrocardiógrafos (EKG)</h3>
+          <p>Equipos de EKG para consultorio y uso hospitalario.</p>
+        </div>
+      </div>
+      <div class="catalogo-item">
+        <div class="icono">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M4 10h16" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h3>Rollos de papel para EKG</h3>
+          <p>Consumibles siempre en existencia para tu equipo.</p>
+        </div>
+      </div>
+      <div class="catalogo-item">
+        <div class="icono">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h3>Gel para ultrasonido</h3>
+          <p>Gel conductor disponible para tus equipos de ultrasonido.</p>
+        </div>
+      </div>
+      <div class="catalogo-item">
+        <div class="icono">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18c0-5 4-9 8-9s8 4 8 9" stroke-linecap="round"/><path d="M4 18h16" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h3>BiPAP y CPAP</h3>
+          <p>Equipos de soporte respiratorio para uso clínico y domiciliario.</p>
+        </div>
+      </div>
+      <div class="catalogo-item">
+        <div class="icono">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="10" width="18" height="7" rx="1"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <h3>Renta de camas médicas</h3>
+          <p>Camas médicas en renta para recuperación y cuidado en casa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta-final">
+  <div class="wrap reveal">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <p>Escríbenos por WhatsApp — manejamos más equipo del que cabe en esta página.</p>
+    <a class="btn-primary" href="https://wa.me/50588819947" target="_blank" rel="noopener">Escribir por WhatsApp →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Equipamed S.A. — Managua, Nicaragua</div>
+    <div><a href="mailto:equipamednicaragua@gmail.com">equipamednicaragua@gmail.com</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Equipamed S.A.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<style>
+  .redes-row{display:flex; gap:12px; margin-top:20px;}
+  .red-link{
+    display:flex; align-items:center; gap:8px; border:1px solid var(--linea);
+    padding:10px 16px; border-radius:var(--radio); font-size:13.5px; font-weight:600;
+    color:var(--azul-900); transition:background .15s, border-color .15s;
+  }
+  .red-link:hover{background:var(--azul-100); border-color:var(--azul-500);}
+  .red-link svg{width:16px; height:16px;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo-equipamed-header.png" alt="Equipamed S.A." style="height:32px; width:auto;">
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#0A3D62" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <div class="nav-links nav-mobile-hide">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="proceso.html">Proceso</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </div>
+    <a class="nav-cta" href="https://wa.me/50588819947" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap reveal">
+    <span class="eyebrow">Contacto</span>
+    <h1>Hablemos sobre tu equipo médico</h1>
+    <p>Escríbenos por WhatsApp o correo. Envío a toda Nicaragua.</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="contacto-grid">
+      <div class="contacto-card reveal">
+        <div class="contacto-line">
+          <div class="contacto-icon">☎</div>
+          <div><div class="lbl">WhatsApp</div><a class="val" href="https://wa.me/50588819947" target="_blank" rel="noopener">+505 8881-9947</a></div>
+        </div>
+        <div class="contacto-line">
+          <div class="contacto-icon">✉</div>
+          <div><div class="lbl">Correo</div><a class="val" href="mailto:equipamednicaragua@gmail.com">equipamednicaragua@gmail.com</a></div>
+        </div>
+        <div class="contacto-line">
+          <div class="contacto-icon">⌖</div>
+          <div><div class="lbl">Ubicación</div><div class="val">Cine León, media cuadra al este — Managua, Nicaragua</div></div>
+        </div>
+        <div class="redes-row">
+          <a class="red-link" href="https://www.facebook.com/Equipamed.S.A" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1 .5-2 2-2h2V1h-3c-3 0-5 2-5 5v3H6v4h3v9h4z"/></svg>
+            Facebook
+          </a>
+          <a class="red-link" href="https://www.instagram.com/equipamed_s.a_/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="map-box reveal reveal-delay-1">
+        <iframe
+          src="https://www.google.com/maps?q=Cine+Le%C3%B3n,+Managua,+Nicaragua&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa de Managua, cerca de Cine León">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Equipamed S.A. — Managua, Nicaragua</div>
+    <div><a href="mailto:equipamednicaragua@gmail.com">equipamednicaragua@gmail.com</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
